@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Project Survey Form</h1>
+      <p id="description">
+        This is a Survey Form for helping us to improve our platform.
+      </p>
+    </header>
+
+    <main>
+      <form action="" id="survey-form">
+        <fieldset id="basic-info">
+          <legend>Personal Information</legend>
+          <label for="name" id="name-label">Insert your name: </label>
+          <input type="text" id="name" placeholder="Full Name" required />
+
+          <label for="email" id="email-label">Insert your email: </label>
+          <input
+            type="email"
+            id="email"
+            placeholder="example@example.com"
+            required
+          />
+
+          <label for="number" id="number-label">Insert your age: </label>
+          <input
+            type="number"
+            placeholder="ex: 18"
+            id="number"
+            min="18"
+            max="99"
+            value="18"
+          />
+        </fieldset>
+
+        <fieldset id="extra-info">
+          <legend>Information about our service</legend>
+          <label for="dropdown"
+            >How do you describe your experience with our platform?</label
+          >
+          <select name="dropdown" id="dropdown">
+            <option value="very-bad">Very Bad</option>
+            <option value="bad">Bad</option>
+            <option value="better">It Could be better</option>
+            <option value="good">Good</option>
+            <option value="excellent" selected>Excellent</option>
+          </select>
+        </fieldset>
+
+        <fieldset id="recommends">
+          <legend>Do you recommend our services?</legend>
+          <input type="radio" name="recommend" id="yes-option" value="yes" />
+          <label for="yes-option">Yes</label>
+          <input
+            type="radio"
+            name="recommend"
+            id="maybe-option"
+            value="maybe"
+          />
+          <label for="maybe-option">Maybe</label>
+          <input type="radio" name="recommend" id="no-option" value="no" />
+          <label for="no-option">No</label>
+        </fieldset>
+
+        <fieldset id="platform-question">
+          <legend>What do you think We have to improve in our platform?</legend>
+          <input type="checkbox" name="checks" id="front" value="front" />
+          <label for="front">The front-end interface</label>
+          <input type="checkbox" name="checks" id="back" value="back" />
+          <label for="back">The back-end petitions</label>
+          <input type="checkbox" name="checks" id="design" value="design" />
+          <label for="design">The general design</label>
+          <input type="checkbox" name="checks" id="service" value="service" />
+          <label for="service">The client service</label>
+        </fieldset>
+
+        <fieldset id="else">
+          <legend>There's anything else you want to share us?</legend>
+          <label for="comments">Write it</label>
+          <textarea
+            name="comments"
+            id="comments"
+            placeholder="My comment is..."
+          ></textarea>
+        </fieldset>
+        <button id="reset" type="reset">Reset</button>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
